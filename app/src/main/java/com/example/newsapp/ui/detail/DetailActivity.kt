@@ -27,6 +27,8 @@ class DetailActivity : AppCompatActivity() {
                 .into(binding.imgView)
             binding.tvTitle.text = getNews.title.toString()
             binding.tvDescription.text = getNews.description.toString()
+            binding.tvAuthor.text = getNews.sourceName.toString()
+            binding.tvPublishedAt.text = getNews.publishedAt.toString()
             Log.d("DetailActivity","Success: $getNews")
         }else{
             Log.d("DetailActivity","Failed: $getNews")
